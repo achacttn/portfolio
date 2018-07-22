@@ -1,0 +1,293 @@
+* {
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+    color: rgba(20,20,20,20.7);
+}
+
+#contact > a {
+    text-decoration: none;
+}
+
+#contact > a:link {
+    text-decoration: none;
+}
+
+#contact > a:visited {
+    text-decoration: none;
+}
+
+#contact > a:hover {
+    text-decoration: underline;
+}
+
+#profile {
+    background-color: rgb(1, 23, 148);
+    display: grid;
+    grid-template-columns: repeat(4, 25vw);
+    grid-template-rows: repeat(12, 8.3vh);
+}
+
+#picture {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 8;
+}
+
+#pic {
+    height: 80%;
+    border-radius: 43%;
+    border: solid 2px black;
+    justify-items: center;
+    margin: 0 20%;
+    /* align-items: center;
+    justify-content: center; */
+}
+
+#summary {
+    font-family: 'Lalezar', cursive;
+    background-color: orange;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 8;
+    grid-row-end: 13;
+}
+
+#summary > p {
+    text-align: left;
+    font-size: 3em;
+    padding-top: 6.5vh;
+    padding-left: 15vw;
+}
+
+#contact {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: yellow;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 8;
+    grid-row-end: 13;
+}
+
+#contact > a {
+    width: inherit;
+    height: inherit;
+}
+
+#contact > a > p {
+    text-align: left;
+    font-size: 1.4em;
+    padding-left: 7vw;
+    padding-top: 3vh;
+}
+
+.icons {
+    margin-right: 1vw;
+    width: 0.68em;
+    height: 0.68em;
+}
+
+#dud:hover {
+    cursor: default;
+}
+
+#projects {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: indigo;
+    display: grid;
+    grid-template-columns: 5vw 15vw 80vw;
+    grid-template-rows: repeat(8, 12.5vh)
+}
+/* 
+button {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.5em;
+    margin: 0 auto;
+    height: inherit;
+    width: inherit;
+} */
+
+.highlighted {
+    background-color: red;
+}
+
+#galabel {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 5;
+}
+
+#ghlabel {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 5;
+    grid-row-end: 9;
+}
+
+#galabel > p, #ghlabel > p{
+    font-size: 2em;
+    text-align: right;
+    position: relative;
+    top: 10vh;
+    transform: rotate(-90deg);
+    
+}
+
+.tabs {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.5em;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 3vh 2vw;
+    /* align-self: center; */
+}
+
+.tabs:hover {
+    background-color: #ddd;
+}
+
+.tabs.active {
+    background-color: #ccc;
+}
+
+.content {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 9;
+    animation: fadeInfo 1s;
+}
+
+.content > img {
+    position: relative;
+    width: 80%;
+    left: 8vw;
+    top: 8vh;
+}
+
+.content > .description {
+    background-color: grey;
+    position: relative;
+    height: 23%;
+    top: 12vh;
+}
+
+.description > p:first-child {
+    padding: 35px 35px 10px 35px;
+}
+
+.description > p:nth-child(2) {
+    padding: 20px 10px 0px 35px;
+    display: inline;
+}
+
+.description > a {
+    padding: 10px 35px 0px 35px;
+    display: inline;
+}
+
+#exploretab {
+    /* background-color: red; */
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+#explore {
+    background-color: red;
+}
+
+#mafiatab {
+    /* background-color: orange; */
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+#mafia {
+    background-color: orange;
+}
+
+#pftab {
+    /* background-color: yellow; */
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+#pf {
+    background-color: yellow;
+}
+
+#ttttab {
+    /* background-color: green; */
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+#ttt {
+    background-color: greenyellow;
+}
+
+#snaketab {
+    /* background-color: blue; */
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+
+#snake {
+    background-color: green;
+}
+
+#webgltab {
+    /* background-color: pink; */
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 6;
+    grid-row-end: 7;
+}
+
+#webgl {
+    background-color: blue;
+}
+
+#petab {
+    /* background-color: turquoise; */
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 7;
+    grid-row-end: 8;
+}
+
+#pe {
+    background-color: hotpink
+}
+
+#moretab {
+    /* background-color: black; */
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 8;
+    grid-row-end: 9;
+}
+
+#more {
+    background-color: turquoise;
+}
+
+@keyframes fadeInfo {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}

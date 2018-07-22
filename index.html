@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Lalezar" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Scott Lee</title>
+</head>
+<body>
+    <div id="profile" class="container">
+        <div id="picture">
+            <img src="assets/cropped.png" alt="Profile picture" id="pic">
+        </div>
+        <div id="summary">
+            <p>SCOTT LEE</p>
+            <p>WEB DEVELOPER</p>
+        </div>
+        <div id="contact">
+            <a href="mailto:achacttn@gmail.com">
+                <p><img class="icons" src="assets/email.png" alt="Email Icon" id="emailicon">achacttn@gmail.com</p>
+            </a>
+            <a id="dud">
+                <p><img class="icons" src="assets/phone.png" alt="Phone Icon" id="phoneicon">+61-414-127-913</p>
+            </a>
+            <a href="https://github.com/achacttn" target="_blank">
+                <p><img class="icons" src="assets/github.png" alt="Github Icon" id="githubicon">github.com/achacttn</p>
+            </a>
+            <a href="https://linkedin.com/in/achacttn" target="_blank">
+                <p><img class="icons" src="assets/linkedin.png" alt="Linkedin Icon" id="linkedinicon">linkedin.com/in/achacttn</p>
+            </a>
+            <a href="https://twitter.com/achacttn" target="_blank">
+                <p><img class="icons" src="assets/twitter.png" alt="Twitter Icon" id="twittericon">twitter.com/achacttn</p>
+            </a>
+            <a href="https://profiles.generalassemb.ly/scott-c-lee" target="_blank">
+                <p><img class="icons" src="assets/ga.png" alt="GA Icon" id="gaicon">profiles.generalassemb.ly/scott-c-lee</p>
+            </a>
+        </div>
+    </div>
+    <div id="projects" class="container">
+        <div class="labels highlighted" id="galabel">
+            <p>GA</p>
+        </div>
+        <div class="labels highlighted" id="ghlabel">
+            <p>Personal</p>
+        </div>
+
+        <div id="exploretab" class="tabs" onclick="openDisplay(event, explore)">Explore</div>
+        <div id="explore" class="content">
+            <img src="assets/port1.png" alt="Screenshot of Explore project">
+            <div class="description">
+                <p>
+                    Explore is a 3d scene projected onto and producing a 2d image on a canvas element. Models of a variety of different formats were imported, and others were created by combining geometries and materials. Due to the high number of particles, the galaxy was created with fragment and vertex shaders.
+                </p>
+                <p>Made with THREE.js and GLSL.</p>
+            </br>
+                <a href="https://achacttn.github.io/explore" target="_blank">Live demo</a>
+            </br>
+                <a href="https://github.com/achacttn/explore" target="_blank">Code</a>
+            </div>
+        </div>
+        <div id="mafiatab" class="tabs" onclick="openDisplay(event, mafia)">Mafia</div>
+        <div id="mafia" class="content">
+            <img src="assets/port2.png" alt="Screenshot of Mafia project">
+            <div class="description">
+                <p>
+                    Mafia is a psychological party game that pits the informed minority against the uninformed majority. The public chat channel immediately available to all Mafia and Citizen players, with the secret channel being available to Mafia.
+                </p>
+                <p>Made with Ruby on Rails, ActionCable, and Bootstrap.</p>
+                </br>
+                <a href="https://mafiaserverwdi27.herokuapp.com/" target="_blank">Live demo</a>
+                </br>
+                <a href="https://github.com/achacttn/mafia" target="_blank">Code</a>
+            </div>
+        </div>
+        <div id="pftab" class="tabs" onclick="openDisplay(event, pf)">Politi-fight</div>
+        <div id="pf" class="content">
+            <img src="assets/port3.png" alt="Screenshot of PF project">
+            <div class="description">
+                <p>
+                    Politi-fight is a simple news headline commenting website. API calls are automatically made to The Guardian to retrieve headlines, which lead to show pages with comments and topics.
+                </p>
+                <p>Made with Rails</p>
+                </br>
+                <a href="https://politifight.herokuapp.com" target="_blank">Live demo</a>
+                </br>
+                <a href="https://github.com/achacttn/pf" target="_blank">Code</a>
+            </div>
+        </div>
+        <div id="ttttab" class="tabs" onclick="openDisplay(event, ttt)">Odd-tac-toe</div>
+        <div id="ttt" class="content">
+            <img src="assets/port4.png" alt="Screenshot of tictactoe project">
+            <div class="description">
+                <p>
+                    First ever project was to implement tic tac toe. The approach taken was to allocate a value to each square such that a sum of a row, column, or diagonal would result in a magic number, and show tictactoe's mapping onto another game, Number Scrabble. Ultimately, the extension of this mapping does not extend past d=3.
+                </p>
+                <p>Made with HTML, CSS, JS</p>
+                
+                </br>
+                <a href="https://achacttn.github.io/tic-tac-toe/indexV2.html" target="_blank">Live demo</a>
+                </br>
+                <a href="https://github.com/achacttn/tic-tac-toe" target="_blank">Code</a>
+            </div>
+        </div>
+        <div id="snaketab" class="tabs" onclick="openDisplay(event, snake)">Snake</div>
+        <div id="snake" class="content">
+            <img src="assets/port5.png" alt="Screenshot of Snake in React">
+            <div class="description">
+                <p>
+                    The classic snake game, now in React! Many features to be added, such as variable tick rate, timer, and even AI.
+                </p>
+                <p>Made with React.js</p>
+                </br>
+                <a href="https://github.com/achacttn" target="_blank">NOT YET Live demo</a>
+                </br>
+                <a href="https://github.com/achacttn" target="_blank">Code</a>
+            </div>
+        </div>
+        <div id="webgltab" class="tabs" onclick="openDisplay(event, webgl)">WebGL-ception</div>
+        <div id="webgl" class="content">
+            <img src="assets/port6.png" alt="Screenshot of WebGL-ception">
+            <div class="description">
+                <p>
+                    A demonstration and exploration of potential user experiences available when rendering WebGL content within a canvas element rendered by WebGL. Loading iframes within a Three.js scene is not only dynamic, with videos able to play, but can be made to receive DOM events.
+                </p>
+                <p>Made with THREE.js and GLSL.</p>
+                </br>
+                <a href="https://github.com/achacttn" target="_blank">NOT YET Live demo</a>
+                </br>
+                <a href="http://github.com/achacttn/webgl_test" target="_blank">Code</a>
+            </div>
+        </div>
+        <div id="petab" class="tabs" onclick="openDisplay(event, pe)">Project Euler</div>
+        <div id="pe" class="content">
+            <img src="assets/port7.png" alt="Screenshot of Project Euler">
+            <div class="description">
+                <p>
+                    Project Euler is a series of problems based in mathematics and computer science. The linked repository includes my code, in JavaScript, on how solutions were approached and found.
+                </p>
+                <p>Made with JavaScript.</p>
+                </br>
+                <a href="http://github.com/achacttn/project_euler" target="_blank">Code</a>
+            </div>
+        </div>
+        <div id="moretab" class="tabs" onclick="openDisplay(event, more)">More</div>
+        <div id="more" class="content">
+            <img src="assets/port8.png" alt="Screenshot of more stuff">
+            <div class="description">
+                <p>
+                    Other projects include a pathfinder for any arbitrary network, as well as implementation of data structures in JavaScript
+                </p>
+                <a href="http://github.com/achacttn/" target="_blank">Code</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

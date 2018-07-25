@@ -105,7 +105,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#627d4d', end
 
 #projects {
     font-family: 'Ubuntu', sans-serif;
-    background-color: indigo;
+    background: rgb(213,206,166);
+background: -moz-linear-gradient(top, rgba(213,206,166,1) 0%, rgba(183,173,112,1) 100%);
+background: -webkit-linear-gradient(top, rgba(213,206,166,1) 0%,rgba(183,173,112,1) 100%);
+background: linear-gradient(to bottom, rgba(213,206,166,1) 0%,rgba(183,173,112,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d5cea6', endColorstr='#b7ad70',GradientType=0 );
+
     display: grid;
     grid-template-columns: 5vw 15vw 80vw;
     grid-template-rows: repeat(8, 12.5vh)
@@ -120,7 +125,11 @@ button {
 } */
 
 .highlighted {
-    background-color: red;
+    background: rgb(169,3,41);
+background: -moz-linear-gradient(top, rgba(169,3,41,1) 0%, rgba(143,2,34,1) 44%, rgba(109,0,25,1) 100%);
+background: -webkit-linear-gradient(top, rgba(169,3,41,1) 0%,rgba(143,2,34,1) 44%,rgba(109,0,25,1) 100%);
+background: linear-gradient(to bottom, rgba(169,3,41,1) 0%,rgba(143,2,34,1) 44%,rgba(109,0,25,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019',GradientType=0 );;
 }
 
 #galabel {
@@ -146,11 +155,15 @@ button {
     
 }
 
+#ghlabel > p {
+    top: 15vh;
+}
+
 .tabs {
     font-family: 'Ubuntu', sans-serif;
     font-size: 1.5em;
     overflow: hidden;
-    background-color: #f1f1f1;
+    background-color: hsl(572, 100%, 50%);
     outline: none;
     cursor: pointer;
     transition: 0.3s;
@@ -159,11 +172,11 @@ button {
 }
 
 .tabs:hover {
-    background-color: #ddd;
+        background-color: hsl(562, 100%, 50%);
 }
 
 .tabs.active {
-    background-color: #ccc;
+        background-color: hsl(552, 100%, 50%);
 }
 
 .content {
@@ -186,7 +199,11 @@ button {
 }
 
 .content > .description {
-    background-color: grey;
+    background: rgb(233,212,179);
+background: -moz-linear-gradient(left, rgba(233,212,179,1) 0%, rgba(182,141,76,1) 99%, rgba(243,226,199,1) 100%);
+background: -webkit-linear-gradient(left, rgba(233,212,179,1) 0%,rgba(182,141,76,1) 99%,rgba(243,226,199,1) 100%);
+background: linear-gradient(to right, rgba(233,212,179,1) 0%,rgba(182,141,76,1) 99%,rgba(243,226,199,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e9d4b3', endColorstr='#f3e2c7',GradientType=1 );
     position: relative;
     height: 23%;
     top: 12vh;
@@ -215,7 +232,11 @@ button {
 }
 
 #explore {
-    background-color: red;
+    background: rgb(169,3,41);
+background: -moz-linear-gradient(top, rgba(169,3,41,1) 0%, rgba(143,2,34,1) 44%, rgba(109,0,25,1) 100%);
+background: -webkit-linear-gradient(top, rgba(169,3,41,1) 0%,rgba(143,2,34,1) 44%,rgba(109,0,25,1) 100%);
+background: linear-gradient(to bottom, rgba(169,3,41,1) 0%,rgba(143,2,34,1) 44%,rgba(109,0,25,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019',GradientType=0 );
 }
 
 #mafiatab {
@@ -227,7 +248,11 @@ button {
 }
 
 #mafia {
-    background-color: red;
+    background: rgb(169,3,41);
+background: -moz-linear-gradient(top, rgba(169,3,41,1) 0%, rgba(143,2,34,1) 44%, rgba(109,0,25,1) 100%);
+background: -webkit-linear-gradient(top, rgba(169,3,41,1) 0%,rgba(143,2,34,1) 44%,rgba(109,0,25,1) 100%);
+background: linear-gradient(to bottom, rgba(169,3,41,1) 0%,rgba(143,2,34,1) 44%,rgba(109,0,25,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019',GradientType=0 );
 }
 
 #pftab {
@@ -239,7 +264,11 @@ button {
 }
 
 #pf {
-    background-color: red;
+    background: rgb(169,3,41);
+background: -moz-linear-gradient(top, rgba(169,3,41,1) 0%, rgba(143,2,34,1) 44%, rgba(109,0,25,1) 100%);
+background: -webkit-linear-gradient(top, rgba(169,3,41,1) 0%,rgba(143,2,34,1) 44%,rgba(109,0,25,1) 100%);
+background: linear-gradient(to bottom, rgba(169,3,41,1) 0%,rgba(143,2,34,1) 44%,rgba(109,0,25,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019',GradientType=0 );
 }
 
 #ttttab {
@@ -251,7 +280,11 @@ button {
 }
 
 #ttt {
-    background-color: red;
+    background: rgb(169,3,41);
+background: -moz-linear-gradient(top, rgba(169,3,41,1) 0%, rgba(143,2,34,1) 44%, rgba(109,0,25,1) 100%);
+background: -webkit-linear-gradient(top, rgba(169,3,41,1) 0%,rgba(143,2,34,1) 44%,rgba(109,0,25,1) 100%);
+background: linear-gradient(to bottom, rgba(169,3,41,1) 0%,rgba(143,2,34,1) 44%,rgba(109,0,25,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019',GradientType=0 );
 }
 
 #snaketab {
@@ -263,7 +296,11 @@ button {
 }
 
 #snake {
-    background-color: red;
+    background: rgb(169,3,41);
+background: -moz-linear-gradient(top, rgba(169,3,41,1) 0%, rgba(143,2,34,1) 44%, rgba(109,0,25,1) 100%);
+background: -webkit-linear-gradient(top, rgba(169,3,41,1) 0%,rgba(143,2,34,1) 44%,rgba(109,0,25,1) 100%);
+background: linear-gradient(to bottom, rgba(169,3,41,1) 0%,rgba(143,2,34,1) 44%,rgba(109,0,25,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019',GradientType=0 );
 }
 
 #webgltab {
@@ -275,7 +312,11 @@ button {
 }
 
 #webgl {
-    background-color: red;
+    background: rgb(169,3,41);
+background: -moz-linear-gradient(top, rgba(169,3,41,1) 0%, rgba(143,2,34,1) 44%, rgba(109,0,25,1) 100%);
+background: -webkit-linear-gradient(top, rgba(169,3,41,1) 0%,rgba(143,2,34,1) 44%,rgba(109,0,25,1) 100%);
+background: linear-gradient(to bottom, rgba(169,3,41,1) 0%,rgba(143,2,34,1) 44%,rgba(109,0,25,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019',GradientType=0 );
 }
 
 #petab {
@@ -287,7 +328,11 @@ button {
 }
 
 #pe {
-    background-color: red
+    background: rgb(169,3,41);
+background: -moz-linear-gradient(top, rgba(169,3,41,1) 0%, rgba(143,2,34,1) 44%, rgba(109,0,25,1) 100%);
+background: -webkit-linear-gradient(top, rgba(169,3,41,1) 0%,rgba(143,2,34,1) 44%,rgba(109,0,25,1) 100%);
+background: linear-gradient(to bottom, rgba(169,3,41,1) 0%,rgba(143,2,34,1) 44%,rgba(109,0,25,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019',GradientType=0 );
 }
 
 #moretab {
@@ -299,7 +344,11 @@ button {
 }
 
 #more {
-    background-color: red;
+    background: rgb(169,3,41);
+background: -moz-linear-gradient(top, rgba(169,3,41,1) 0%, rgba(143,2,34,1) 44%, rgba(109,0,25,1) 100%);
+background: -webkit-linear-gradient(top, rgba(169,3,41,1) 0%,rgba(143,2,34,1) 44%,rgba(109,0,25,1) 100%);
+background: linear-gradient(to bottom, rgba(169,3,41,1) 0%,rgba(143,2,34,1) 44%,rgba(109,0,25,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019',GradientType=0 );
 }
 
 @keyframes fadeInfo {
